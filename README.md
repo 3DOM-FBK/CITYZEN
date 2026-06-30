@@ -1,4 +1,4 @@
-# CityZEN
+# CityZen: LOD2 building reconstruction with point cloud-free model-driven approach
 
 ![CityZEN](cityzen.png)
 
