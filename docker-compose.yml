@@ -1,0 +1,22 @@
+services:
+  cityzen-pipeline:
+    image: cityzen-pipeline:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      no_cache: false
+      pull: false
+    container_name: cityzen-processing
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    volumes:
+      - .:/workspace
+    environment:
+      - PYTHONPATH=/workspace
+      - DISPLAY=${DISPLAY:-:0}
+    stdin_open: true
+    tty: true
+    command: ["--ortho_path", "/workspace/data/input/ortho", "--footprints_path", "/workspace/data/input/footprints"]

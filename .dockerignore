@@ -1,0 +1,49 @@
+# Git and editor files
+.git/
+.github/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+venv/
+env/
+.venv/
+.env
+
+# Local data, generated outputs, logs
+data/
+logs/
+output/
+outputs/
+test_outputs/
+*.log
+*.out
+*.err
+*.tmp
+*.temp
+
+# Heavy model/checkpoint artifacts mounted or downloaded separately
+DSMNet/checkpoints/
+building_rooftype_classification/models/
+*.h5
+*.keras
+*.ckpt*
+
+# Build/container artifacts
+3dom-lod2-generator/tool/cpp/build/
+.singularity-cache/
+.singularity-tmp/
+*.sif
+*.tar
+*.tar.gz
