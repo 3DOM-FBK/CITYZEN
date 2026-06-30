@@ -29,8 +29,8 @@ Training scripts, validation scripts, v1 entrypoints, demo images, generated dat
 Model files are not tracked in Git. Add them after cloning:
 
 ```text
-DSMNet/checkpoints/Bologna/mtl.weights.h5
-DSMNet/checkpoints/Bologna/refinement.weights.h5
+DSMNet/checkpoints/mtl.weights.h5
+DSMNet/checkpoints/refinement.weights.h5
 building_rooftype_classification/models/best_fine_tuned_vgg16.keras
 ```
 
@@ -64,15 +64,15 @@ docker run --rm --gpus all \
 
 ## Leonardo / Singularity
 
-Create a Docker archive, build the SIF, then submit the Bologna job script:
+Create a Docker archive, build the SIF, then submit the job script:
 
 ```bash
 docker save cityzen-pipeline:latest -o cityzen-pipeline.tar
 ./build-sif.sh
-sbatch submit_job_bologna.sh
+sbatch submit_job.sh
 ```
 
-Before submitting, set your Slurm account in `submit_job_bologna.sh`. The script supports environment overrides such as `SIF`, `HOST_CITYZEN`, `DSMNET_CHECKPOINT_DIR`, and calibration variables.
+Before submitting, set your Slurm account in `submit_job.sh`. The script supports environment overrides such as `SIF`, `HOST_CITYZEN`, `DSMNET_CHECKPOINT_DIR`, and calibration variables.
 
 ## Outputs
 
