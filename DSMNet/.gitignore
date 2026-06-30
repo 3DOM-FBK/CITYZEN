@@ -1,0 +1,6 @@
+/datasets/
+/__pycache__/
+/checkpoints/*
+!/checkpoints/.gitkeep
+/output/
+/pycore

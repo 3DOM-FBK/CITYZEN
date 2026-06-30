@@ -1,0 +1,5 @@
+/output
+/orthophoto_results
+/models/*
+!/models/.gitkeep
+**/__pycache__/

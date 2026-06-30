@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and local config
+.env
+.venv/
+venv/
+env/
+
+# Runtime data and generated outputs
+data/*
+!data/.gitkeep
+!data/input/
+!data/input/.gitkeep
+!data/input/ortho/
+!data/input/ortho/.gitkeep
+!data/input/footprints/
+!data/input/footprints/.gitkeep
+!data/output/
+!data/output/.gitkeep
+logs/
+*.log
+*.out
+*.err
+output/
+outputs/
+test_outputs/
+
+# Model weights and checkpoints
+DSMNet/checkpoints/*
+!DSMNet/checkpoints/.gitkeep
+building_rooftype_classification/models/*
+!building_rooftype_classification/models/.gitkeep
+*.h5
+*.keras
+*.ckpt
+*.ckpt.*
+*.weights
+*.weights.*
+
+# Large geospatial / mesh artifacts
+*.tif
+*.tiff
+*.jp2
+*.las
+*.laz
+*.npy
+*.npz
+*.ply
+*.obj
+*.blend
+*.city.json
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qmd
+*.geojson
+*.aux.xml
+
+# Build and container artifacts
+3dom-lod2-generator/tool/cpp/build/
+.singularity-cache/
+.singularity-tmp/
+*.sif
+*.tar
+*.tar.gz
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
